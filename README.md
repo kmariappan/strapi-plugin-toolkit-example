@@ -1,6 +1,18 @@
-# 🚀 Getting started with Strapi
+# 🚀 Strapi Starter Blog with strapi-plugin-toolkit Example
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+- Clone this Repo and install dependencies.
+
+### `Generate Content Types`
+
+```
+npm run generate
+# or
+yarn generate
+```
+
+<div align="center" width="150px">
+  <img style="width: 960px; height: auto;" src="public/demo.gif" alt="Logo - Strapi Comments plugin" />
+</div>
 
 ### `develop`
 
