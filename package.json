@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "@kmariappan/strapi-type-generator": "^1.1.3",
+    "@strapi/plugin-graphql": "^4.0.5",
+    "@strapi/plugin-i18n": "4.1.11",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/strapi": "4.1.11",
+    "better-sqlite3": "7.4.6",
+    "copyfiles": "^2.4.1",
+    "fs-extra": "^10.0.0",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "recursive-copy": "^2.0.14",
+    "strapi-plugin-toolkit": "^0.1.0-beta.1",
+    "typescript": "^4.6.4"
+  },
+  "name": "strapi-plugin-toolkit-example",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "pregenerate": "cd .tmp/ && rm -rf type-generator-template",
+    "generate": "node toolkit.config.js && cd .tmp/type-generator-template && tsc",
+    "postgenerate": "cd .tmp/ && rm -rf type-generator-template"
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "ebc91b38-c228-4c6b-8a46-2f6bbf332bc0",
+    "template": "blog"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
